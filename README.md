@@ -28,8 +28,6 @@
 
 ![screenshot](https://raw.githubusercontent.com/riveraaj/My-Team-Page/main/asset/image/Demo.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
 - You can see the page in the following link: [(https://riveraaj.github.io/my-team-page/)]
 - In this small project I was able to improve good practices in CSS3, layout and structure in HTML5.
 
