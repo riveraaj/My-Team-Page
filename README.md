@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://riveraaj.github.io/my-team-page/">
+    <a href="https://riveraaj.github.io/My-Team-Page/">
       Solution
     </a>
     <span> | </span>
