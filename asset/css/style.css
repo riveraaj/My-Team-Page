@@ -1,0 +1,245 @@
+/* ********** Custom Properties ********** */
+
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'PT Serif', serif;
+    --third-font: 'Montserrat', sans-serif;
+
+    --primary-color: #000000;
+    --secondary-color: #A9A9A9;
+}
+
+/* ********** Reset ********** */
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/* ********** Components ********** */
+.team-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9.6875rem, 1fr));
+    gap: 1rem;
+}
+
+/* ********** Utilities ********** */
+.team-gallery__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.team-gallery__items__body-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-gallery__items span {
+    width: 10%;
+}
+
+.team-gallery__items__body-container img {
+    height: 100%;
+}
+
+/* ********** Site Styles ********** */
+header,
+main,
+footer {
+    margin: auto;
+    width: 90vw;
+}
+
+
+/* Header */
+header {
+    color: var(--primary-color);
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.25em;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.about-section {
+    font-family: var(--primary-font);
+}
+
+.about-section h2 {
+    margin: 0;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+.about-section p {
+    margin: 0;
+    margin-top: .5rem;
+    font-weight: 400;
+    font-size: 0.875em;
+}
+
+/* Main */
+main {
+    min-height: 100vh;
+}
+
+.team-gallery {
+    margin: auto;
+    max-width: 31rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.team-gallery__items__body-container h3 {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.team-gallery__items span {
+    font-family: var(--secondary-font);
+    font-size: .7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    height: fit-content;
+    white-space: nowrap;
+    transform: rotate(90deg) translate(.5rem);
+    -webkit-transform: rotate(90deg) translate(.5rem);
+    -moz-transform: rotate(90deg) translate(.5rem);
+    -ms-transform: rotate(90deg) translate(.5rem);
+    -o-transform: rotate(90deg) translate(.5rem);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-family: var(--third-font);
+    color: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+@media (min-width:22.6875rem) and (max-width:47.9375rem) {
+
+    /* Main */
+    .team-gallery__items:nth-child(even) {
+        position: relative;
+        top: 60px;
+    }
+
+    .team-gallery__items span {
+        transform: rotate(90deg) translate(.3rem);
+        -webkit-transform: rotate(90deg) translate(.3rem);
+        -moz-transform: rotate(90deg) translate(.3rem);
+        -ms-transform: rotate(90deg) translate(.3rem);
+        -o-transform: rotate(90deg) translate(.3rem);
+    }
+}
+
+@media (min-width:48rem) and (max-width:63.9375rem) {
+
+    /* Header */
+    .about-section p {
+        max-width: 75%;
+    }
+
+    /* Main */
+    .team-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
+        max-width: 38rem;
+    }
+
+    .team-gallery__items:nth-child(even) {
+        position: relative;
+        top: 60px;
+    }
+
+    .team-gallery__items span {
+        transform: rotate(90deg) translate(.5rem);
+        -webkit-transform: rotate(90deg) translate(.5rem);
+        -moz-transform: rotate(90deg) translate(.5rem);
+        -ms-transform: rotate(90deg) translate(.5rem);
+        -o-transform: rotate(90deg) translate(.5rem);
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width:64rem) {
+
+    header,
+    main,
+    footer {
+        margin: auto;
+        width: 70vw;
+        max-width: 59.75rem;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    header h1 {
+        width: 50%;
+        margin: 0;
+        margin-top: 8%;
+    }
+
+    .about-section {
+        width: 50%;
+        margin-top: 8%;
+    }
+
+    .about-section h2 {
+        margin-top: 0;
+    }
+
+    /* Main */
+    main .team-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(14.2rem, 1fr));
+        max-width: 59.75rem;
+    }
+
+    .team-gallery__items:nth-child(2),
+    .team-gallery__items:nth-child(5) {
+        position: relative;
+        top: 60px;
+    }
+}
