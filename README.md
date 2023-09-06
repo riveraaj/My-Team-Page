@@ -28,7 +28,7 @@
 
 ![screenshot](https://raw.githubusercontent.com/riveraaj/My-Team-Page/main/asset/image/Demo.png)
 
-- You can see the page in the following link: https://riveraaj.github.io/my-team-page/
+- You can see the page in the following link: https://riveraaj.github.io/My-Team-Page/
 - In this small project I was able to improve good practices in CSS3, layout and structure in HTML5.
 
 ### Built With
